@@ -1,0 +1,43 @@
+{
+  "name": "babel-7-monorepo-example",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Example of how to set up a monorepo with Babel 7, Eslint and Jest",
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "Michiel Sikma <michiel@sikma.org>",
+  "license": "MIT",
+  "bin": {
+    "task": "./scripts/task"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/scripts/",
+      ".*/bin/",
+      ".*/lib/"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "verbose": true
+  },
+  "homepage": "https://github.com/msikma/babel-7-monorepo-example",
+  "devDependencies": {
+    "@babel/cli": "7.0.0-beta.47",
+    "@babel/core": "7.0.0-beta.47",
+    "@babel/node": "7.0.0-beta.47",
+    "@babel/preset-env": "7.0.0-beta.47",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.6.0",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0",
+    "regenerator-runtime": "^0.12.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "b7me-pkg-3",
+  "version": "1.0.0",
+  "description": "Example package 3",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "dependencies": {
+  }
+}
